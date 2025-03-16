@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+      "mcp-search-server": {
+        "command": "uv",
+        "args": [
+          "--directory",
+          "/Users/xzq.xu/Desktop/mcp-search",
+          "run",
+          "mcp-search-server"
+        ]
+      }
+    }
+}

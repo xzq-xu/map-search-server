@@ -1,0 +1,42 @@
+# Server Configuration
+server:
+  host: "127.0.0.1"
+  port: 8000
+  debug: false
+  workers: 4
+
+# GitHub Configuration
+github:
+  token: "your_github_token"
+  api_base_url: "https://api.github.com"
+  rate_limit_delay: 60  # seconds between requests
+  cache_ttl: 3600  # cache time to live in seconds
+
+# Database Configuration
+database:
+  url: "sqlite+aiosqlite:///data/mcp_search.db"
+  echo: false
+
+# Cache Configuration
+cache:
+  type: "memory"  # memory or redis
+  max_size: 1000  # maximum number of items in memory cache
+  ttl: 3600  # default cache TTL in seconds
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/mcp_search.log"
+
+# Search Configuration
+search:
+  max_results: 100
+  default_page_size: 10
+  min_score: 0.5
+
+# Recommendation Configuration
+recommendation:
+  update_interval: 86400  # daily update in seconds
+  pool_size: 50  # size of recommendation pool
+  min_stars: 10  # minimum stars for recommendation
