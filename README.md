@@ -1,5 +1,7 @@
 # MCP Search Server
 
+!!!! 正在大幅修改中
+
 一个强大的MCP（Model Context Protocol）项目搜索和管理服务器，帮助开发者更好地发现和使用MCP生态系统中的优秀项目。
 
 ## 功能特点
